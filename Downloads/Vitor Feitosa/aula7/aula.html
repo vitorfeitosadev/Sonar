@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
+<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
+<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body class="bg-primary-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fs-1 fw-bold" href="#">TechNova</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi-three-dots-vertical text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Nossos Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.youtube.com/" target="_blank">Youtube</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-disabled="true">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-light text-light" type="submit">Search</button>
+                    </form>
+                    <!-- Botão Login/Sign Up -->
+                    <button class="btn btn-outline-dark text-dark bg-light mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#loginOffcanvas" aria-controls="loginOffcanvas">
+                      Login/SignUp
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-center my-4">Nossos Produtos</h1>
+    
+    <div class="row my-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://dverr7iyvl0k.cloudfront.net/Custom/Content/Products/11/97/11972_tel-cel-smart-samsung-a15-128gb-sma155mzkdzto-az-e_l3_638500918648608953.webp" class="card-img-top" alt="Smartphone">
+                <div class="card-body">
+                    <h5 class="card-title">Smartphone Galaxy A15 128GB Samsung Azul Escuro</h5>
+                    <p class="card-text">R$ 999,00</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alertaCarrinho">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/41bWrHzIWtL.jpg" class="card-img-top" alt="Tablet">
+                <div class="card-body">
+                    <h5 class="card-title">Tablet de 10 polegadas, Android</h5>
+                    <p class="card-text">R$ 453,55</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alertaCarrinho">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn.awsli.com.br/600x1000/2531/2531002/produto/279791749/89b4338fa4e823581c65a33a597996d6-1c0n3hg9rb.jpg" class="card-img-top" alt="Cadeira Gamer">
+                <div class="card-body">
+                    <h5 class="card-title">Cadeira Gamer RGB Fox Racer Iluminação LED - Preta</h5>
+                    <p class="card-text">R$ 867,04</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alertaCarrinho">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIe5Tq0qyTZHmA8Ye7kDjkpRdPHICVe-T2vA&s" class="card-img-top" alt="Smartwatch">
+                <div class="card-body">
+                    <h5 class="card-title">Relogio Smartwatch D20 Compativel Com iPhone</h5>
+                    <p class="card-text">R$ 34,57</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alertaCarrinho">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary">
+        <br>
+        <p class="text-light fs-3 text-center">FAQ</p>
+        <div class="accordion mx-5 my-4 bg-primary-subtle" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Quais são as formas de pagamento?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Aceitamos as principais bandeiras de cartão de crédito (Visa, Mastercard, Elo) em até 12x, PIX (com 5% de desconto!) e boleto bancário. Todas as transações são processadas em ambiente seguro.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Qual o prazo de entrega e como rastreio meu pedido?
+                </button>  
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    O prazo de entrega varia conforme a sua localização. Você pode calcular o prazo exato na página do produto ou no carrinho, informando seu CEP. Assim que o pedido for despachado, você receberá um código de rastreio por e-mail para acompanhar a entrega.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Como funciona a política de troca e garantia?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Todos os nossos produtos são novos, originais e possuem 12 meses de garantia com o fabricante. Além disso, você tem 7 dias corridos após o recebimento para se arrepender da compra e solicitar a devolução. Para mais detalhes, acesse nossa página de "Trocas e Devoluções" ou entre em contato com o SAC.
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+    </footer>
+
+    <!-- Offcanvas Login -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
+        <div class="offcanvas-header bg-primary text-light">
+            <h5 class="offcanvas-title" id="loginOffcanvasLabel">LOGIN</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Form de Login -->
+            <form>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Digite seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-3">Entrar</button>
+            </form>
+            <hr>
+            <p>Não possui uma conta?</p>
+            <a class="text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#cadastro" aria-controls="loginOffcanvas">
+                Cadastre-se agora
+            </a>
+        </div>
+    </div>
+    <!-- Offcanvas Cadastro -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cadastro" aria-labelledby="loginOffcanvasLabel">
+        <div class="offcanvas-header bg-primary text-light">
+            <h5 class="offcanvas-title" id="loginOffcanvasLabel">SIGN UP</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Form de Cadastro -->
+            <form>
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="emailRegInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailRegInput" placeholder="Digite seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="passwordRegInput" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="passwordRegInput" placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="btn btn-success w-100">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="alertaCarrinho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Carrinho Atualizado</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Produto adicionado no carrinho com sucesso!</p>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

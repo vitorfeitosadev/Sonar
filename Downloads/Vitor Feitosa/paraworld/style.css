@@ -1,0 +1,203 @@
+.centralizado{
+    text-align: center;
+}
+
+/* Seleciona o elemento que você quer dar um fundo */
+body {
+    /* Propriedade principal: define a URL (caminho) da imagem */
+    background-image: url('ThisIsParamore.jpg'); 
+    
+    /* --- Propriedades adicionais (muito úteis) --- */
+  
+    /* Evita que a imagem se repita (ótimo para imagens grandes) */
+    background-repeat: no-repeat; 
+  
+    /* Garante que a imagem cubra toda a área do elemento */
+    background-size: cover; 
+  
+    /* Centraliza a imagem no elemento */
+    background-position: center center; 
+    
+    /* (Opcional) Mantém a imagem fixa enquanto o conteúdo rola (efeito parallax) */
+    background-attachment: fixed;
+  }
+
+#fonte{
+    /* 1. Fonte: Futura (ou alternativa) */
+    font-family: 'Futura', 'Century Gothic', 'Avant Garde', sans-serif;
+    
+    /* 2. Estilo Pesado/Extrabold */
+    font-weight: 800; /* Pode ser 'bold' ou um valor alto como 800/900 */
+    
+    /* 3. Estilização do Título */
+    font-size: 1.5em; /* Tamanho grande, ajuste conforme a necessidade */
+    text-transform: uppercase; /* O título é todo em maiúsculas */
+    line-height: 2; /* Ajusta o espaçamento entre linhas */
+    letter-spacing: -2px; /* Adiciona um leve espaçamento negativo (condensado) */
+    text-align: center;
+    /* 4. Cor do Texto */
+    color: #ffffff; /* Branco */
+    /* Defina uma largura máxima para ele não ocupar 100% */
+    max-width: 800px; /* Por exemplo, 800 pixels de largura */
+    width: 90%;      /* Garante que ele seja responsivo em telas menores */
+    
+    /* 5. Estilo do Contêiner (opcional, para simular o fundo da capa) */
+    padding: 20px;
+    margin: 20px auto;
+    
+    /* Fundo vibrante da capa: um rosa-avermelhado */
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#titulo{
+    /* 1. Fonte: Futura (ou alternativa) */
+    font-family: 'Futura', 'Century Gothic', 'Avant Garde', sans-serif;
+    
+    /* 2. Estilo Pesado/Extrabold */
+    font-weight: 800; /* Pode ser 'bold' ou um valor alto como 800/900 */
+    
+    /* 3. Estilização do Título */
+    font-size: 3em; /* Tamanho grande, ajuste conforme a necessidade */
+    text-transform: uppercase; /* O título é todo em maiúsculas */
+    line-height: 2; /* Ajusta o espaçamento entre linhas */
+    letter-spacing: -2px; /* Adiciona um leve espaçamento negativo (condensado) */
+    text-align: center;
+    /* 4. Cor do Texto */
+    color: rgb(255 165 0); /* Branco */
+    
+    /* 5. Estilo do Contêiner (opcional, para simular o fundo da capa) */
+    padding: 20px;
+    margin: 20px 0;
+    
+    /* Fundo vibrante da capa: um rosa-avermelhado */
+    text-align: center;
+    border-radius: 5px;
+}
+
+.backpreto{
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+/* 3. Estilização da Navegação */
+.nav-bar {
+    /* Padding: Espaço interno na barra de navegação */
+    padding: 10px 0;
+    
+    /* Border: Uma borda para separar visualmente */
+    border-bottom: 1px solid #ec8c32;
+    
+    /* Display: Para centralizar ou organizar os links (ex: flex) */
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link {
+    /* Padding: Torna a área clicável maior e mais espaçosa */
+    padding: 5px 15px; 
+    
+    /* Border: Borda sutil nos links */
+    border: 1px solid transparent; 
+    transition: border 0.3s;
+}
+.nav-link:hover {
+    border: 1px solid #ffffff; /* Efeito Box Model no hover */
+}
+/* 5. Estilização do Rodapé */
+.footer {
+    padding: 15px 20px; /* Padding para dar altura ao rodapé */
+    margin-top: 50px; /* Margin para separar do conteúdo principal */
+}
+
+
+/* Cor do link normal (não visitado) */
+a:link {
+    color: #ffffff; /* Um tom de verde escuro */
+  }
+  
+  /* Cor do link visitado (opcional, mas recomendado) */
+  a:visited {
+    color: #ffffff; /* Roxo escuro, um padrão para visitado, mas você pode mudar */
+  }
+  
+  /* Cor do link ao passar o mouse */
+  a:hover {
+    color: #eb9a31; /* Um verde mais claro para o efeito hover */
+  }
+  
+  /* Cor do link no momento do clique */
+  a:active {
+    color: #eb9a31; /* Vermelho alaranjado, por exemplo */
+  }
+
+  /*
+  ESTILO PARA O CONTÊINER DO VÍDEO E LEGENDA
+  (Use .video-item se usou <figure> ou .video-container se usou <div>)
+*/
+.video-item {
+    /* Define a largura máxima para o contêiner (opcional, pode ser 100% ou um valor fixo) */
+    max-width: 560px;
+
+    /* Define as margens superior e inferior, e centraliza o elemento na página */
+    margin: 20px auto; 
+
+    /* Adiciona um preenchimento interno e uma sombra sutil para destacar a seção do vídeo */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda leve para separar os vídeos */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border 0.3s;
+    
+}
+
+
+/*
+  ESTILO PARA O SUBTÍTULO/LEGENDA
+*/
+.video-subtitle {
+
+    font-family: 'Futura', 'Century Gothic', 'Avant Garde', sans-serif;
+    /* Cor do texto para o subtítulo */
+    color: #ffffff; 
+
+    /* Tamanho de fonte um pouco menor que o corpo do texto normal */
+    font-size: 0.8em; 
+    
+    /* Estilo da fonte (opcional) */
+    font-style: italic;
+
+    /* Centraliza o texto (redundante se o pai já tem text-align: center, mas garante) */
+    text-align: center; 
+
+    /* Espaçamento em torno do subtítulo */
+    padding: 10px 0 5px 0; 
+    
+}
+
+#secao-videos-semantica{
+        /* 1. Fonte: Futura (ou alternativa) */
+        font-family: 'Futura', 'Century Gothic', 'Avant Garde', sans-serif;
+    
+        /* 2. Estilo Pesado/Extrabold */
+        font-weight: 800; /* Pode ser 'bold' ou um valor alto como 800/900 */
+        
+        /* 3. Estilização do Título */
+        font-size: 1.5em; /* Tamanho grande, ajuste conforme a necessidade */
+        text-transform: uppercase; /* O título é todo em maiúsculas */
+        line-height: 2; /* Ajusta o espaçamento entre linhas */
+        letter-spacing: -2px; /* Adiciona um leve espaçamento negativo (condensado) */
+        text-align: center;
+        /* 4. Cor do Texto */
+        color: #ffffff; /* Branco */
+        /* Defina uma largura máxima para ele não ocupar 100% */
+        max-width: 800px; /* Por exemplo, 800 pixels de largura */
+        width: 90%;      /* Garante que ele seja responsivo em telas menores */
+        
+        /* 5. Estilo do Contêiner (opcional, para simular o fundo da capa) */
+        padding: 20px;
+        margin: 20px auto;
+        
+        /* Fundo vibrante da capa: um rosa-avermelhado */
+        text-align: center;
+        border-radius: 5px;
+
+}

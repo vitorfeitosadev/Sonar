@@ -1,0 +1,46 @@
+body {
+    /* Propriedade principal: define a URL (caminho) da imagem */
+    background-image: url('fundoprovisorio.avif'); 
+    
+    /* --- Propriedades adicionais (muito úteis) --- */
+  
+    /* Evita que a imagem se repita (ótimo para imagens grandes) */
+    background-repeat: no-repeat; 
+  
+    /* Garante que a imagem cubra toda a área do elemento */
+    background-size: cover; 
+  
+    /* Centraliza a imagem no elemento */
+    background-position: center center; 
+    
+    /* (Opcional) Mantém a imagem fixa enquanto o conteúdo rola (efeito parallax) */
+    background-attachment: fixed;
+  }
+
+  #fonte{
+    /* 1. Fonte: Futura (ou alternativa) */
+    font-family: 'Futura', 'Century Gothic', 'Avant Garde', sans-serif;
+    
+    /* 2. Estilo Pesado/Extrabold */
+    font-weight: 800; /* Pode ser 'bold' ou um valor alto como 800/900 */
+    
+    /* 3. Estilização do Título */
+    font-size: 1.5em; /* Tamanho grande, ajuste conforme a necessidade */
+    text-transform: uppercase; /* O título é todo em maiúsculas */
+    line-height: 2; /* Ajusta o espaçamento entre linhas */
+    letter-spacing: -2px; /* Adiciona um leve espaçamento negativo (condensado) */
+    text-align: center;
+    /* 4. Cor do Texto */
+    color: #ffffff; /* Branco */
+    /* Defina uma largura máxima para ele não ocupar 100% */
+    max-width: 800px; /* Por exemplo, 800 pixels de largura */
+    width: 90%;      /* Garante que ele seja responsivo em telas menores */
+    
+    /* 5. Estilo do Contêiner (opcional, para simular o fundo da capa) */
+    padding: 20px;
+    margin: 20px auto;
+    
+    /* Fundo vibrante da capa: um rosa-avermelhado */
+    text-align: center;
+    border-radius: 5px;
+}  
